@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/photo1.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="page1.html".html">Rahma Boukhris</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/rahmaboukhris2001" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rahma-boukhris-b0ab6321a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&fbclid=IwAR3DoEabGrL3HeWnezgUjLClYpHJxofRyGP_w03G0fcSK-LVY3sojUM7N74" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        
+        <ul>
+          <!-- Ajout de la photo sous forme de cercle -->        
+          <!-- Liens de navigation -->
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="education.html">Éducation</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="quiz.html">Quizz</a></li>
+          <li><a href="testimonials.html">Témoignages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+ <!-- Section de contact -->
+ 
+</head>
+<body>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#confirmationMessage {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+  </style>
+
+<header>
+  <h1></h1>
+</header>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>N'hésitez pas à me contacter pour toute opportunité ou question.</p>
+
+ 
+  <form action="mailto:rahmaboukhris55@gmail.com" method="post" enctype="text/plain">
+    <label for="email">Votre adresse e-mail :</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="message">Votre message :</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+  <div id="confirmationMessage"></div>
+</section>
+
+<footer>
+  <!-- Ajoutez des informations de pied de page si nécessaire -->
+</footer>
+
+<script>
+  function envoyerMessage() {
+      // Récupérer les valeurs du formulaire
+      var nom = document.getElementById('nom').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // Valider les données (exemple simple)
+      if (nom === '' || email === '' || message === '') {
+          alert('Veuillez remplir tous les champs.');
+          return;
+      }
+
+      // Afficher un message de confirmation
+      var confirmationMessage = document.getElementById('confirmationMessage');
+      confirmationMessage.innerHTML = 'Votre message a été envoyé avec succès!';
+
+      // Réinitialiser le formulaire
+      document.getElementById('contactForm').reset();
+  }
+</script>
+</body>
+</html>
+
